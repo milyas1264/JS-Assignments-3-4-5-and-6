@@ -30,7 +30,80 @@
        document.write("Total Cost of your Order is " + totalCost);
        document.write("<br>");
        document.write("<br>");
+
        document.write("<h2>Mark Sheet</h2>");
+       const totalMarks = 980;
+       const obtainedMarks = 804;
+       const percentage = 804/980 * 100;
+       document.write("<br>");
+       document.write("Total Marks = 980 ");
+       document.write("<br>");
+       document.write("Obtained Marks = 804 ");
+       document.write("<br>");
+       document.write("Percentage is : " + percentage + '%');
+        
+       document.write("<h2>Currency in PKR</h2>");
+       //Assume we have 10 US dollars & 25 Saudi Riyals.
+       let US_$ = 104.80;
+       let Saudi_Ryal = 28;
+       let convertInRupee = (108.80 * 10) + (28 * 25)
+       let totalPKR = convertInRupee;
+    //    document.write("<br>");
+       document.write("Total Currency in PKR : " + totalPKR);
+
+       //Question no 10;
+       let num1 = 10;
+       let num2 = 5 ; 
+       let cal = ((10 + 5) * 10)/2 ;
+       let result = cal;
+       document.write("<br>");
+       document.write("<br>");
+       document.write("(10)All calculations in single Expression = " + cal);
+
+       document.write("<h2>Age Calculator</h2>");
+       let currentYear = 2025;
+       let birthYear = 1990;
+       let age = 2025 - 1990;
+       let current$age = age;
+       document.write("Current Year : " + currentYear);
+       document.write("<br>");
+       document.write("Birth Year : " + birthYear);
+       document.write("<br>");
+       document.write("Your age is : " + current$age);
+
+       // (Hint : Circumference of a circle = 2 π r , π = 3.142)
+      //Calculate the area based on the radius, and output “The
+     //area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+       document.write("<h2>The Geometrizer:</h2>");
+       let radius = 20;
+       const circumference = 2 * 3.142 * 20;
+       const areaOfCicle = 3.142 * 20**2 ;
+    //    document.write("<br>");
+       document.write("Radius of Circle : " + radius);
+       document.write("<br>");
+       document.write("The Circumference is : " + circumference);
+       document.write("<br>");
+       document.write("The area is : " + areaOfCicle);
+       //13. The Lifetime Supply Calculator:
+       document.write("<h2>13. The Lifetime Supply Calculator:</h2>");
+       let f_snack = "Chocolate chip";
+       let currentAge = 15;
+       let maxAge = 65;
+       let snack_per_day = 3;
+       let needSnacks = ((65 - 15 )* 3)/2;
+
+       document.write("<br>");
+       document.write("Favourit Snack : " + f_snack);
+       document.write("<br>");
+       document.write("Current Age: " + currentAge);
+       document.write("<br>");
+       document.write("Estimated Maximum Age :" + maxAge);
+       document.write("<br>");
+       document.write("Amount of Snacks per day : " + snack_per_day);
+       document.write("<br>");
+       document.write("You will need 150 chocolate chip to last you until the ripe old age of : " + maxAge);
+
+
 
        
 
