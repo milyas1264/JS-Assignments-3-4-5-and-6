@@ -48,6 +48,7 @@ let movieTicket = 600;
 let fiveTickets = 600 * 5;
 document.write("<br>");
 document.write("Total Cost to buy 5 tickets to a movie is : " + fiveTickets + 'PKR')
+document.write("<br>");
     //Table of 5;
 let x = 5;
 let y = 1;
