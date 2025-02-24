@@ -5,7 +5,8 @@ sub = 10 - 5;
 mul = 10 * 5;
 division = 10 / 5;
 modulus = 10 % 5;
-
+document.write("<br>");
+document.write("<br>");
 document.write("1)Sum of 10 and 5 is = " + sum)
 document.write("<br>");
 document.write("<br>");
@@ -64,25 +65,25 @@ let z10 = 5*10
 document.write("<br>");
 document.write(" Table of 5 " )
 document.write("<br>");
-document.write("5x1 = " + z1 )
+document.write("5 x 1 = " + z1 )
 document.write("<br>");
-document.write("5x2 = " + z2 )
+document.write("5 x 2 = " + z2 )
 document.write("<br>");
-document.write("5x3 = " + z3 )
+document.write("5 x 3 = " + z3 )
 document.write("<br>");
-document.write("5x4 = " + z4 )
+document.write("5 x 4 = " + z4 )
 document.write("<br>");
-document.write("5x5 = " + z5 )
+document.write("5 x 5 = " + z5 )
 document.write("<br>");
-document.write("5x6 = " + z6 )
+document.write("5 x 6 = " + z6 )
 document.write("<br>");
-document.write("5x7 = " + z7 )
+document.write("5 x 7 = " + z7 )
 document.write("<br>");
-document.write("5x8 = " + z8 )
+document.write("5 x 8 = " + z8 )
 document.write("<br>");
-document.write("5x9 = " + z9 )
+document.write("5 x 9 = " + z9 )
 document.write("<br>");
-document.write("5x 10 = " + z10)
+document.write("5 x 10 = " + z10)
 //6. The Temperature Converter: °F = (°C x 9/5) + 32
 document.write("<br>");
 document.write("The Temperature Converter:")
