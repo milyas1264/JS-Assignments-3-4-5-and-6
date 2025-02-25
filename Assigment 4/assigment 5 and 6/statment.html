@@ -18,55 +18,75 @@
 
 
     <script>
-        let pakistan = "win"
-        let india = "lose"
-        let pakistanScore = 300
-        let indiaScore = 250
-        if (pakistan == "win") {
-            console.log("Hurrah! Pakistan won the match");
-            document.write("Hurrah! Pakistan won the match")
-            
-        } else {
-            console.log("Alas! Pakistan lost the match");
-            document.write("Alas! Pakistan lost the match")
-            
-        }
-        if (india !== "win") {
-            console.log("Hurrah! India lost the match");
+        //Task one
+        var age = prompt("Enter your age: ");
 
-            document.write("<br>")
-            document.write("Hurrah! India lost the match")
-            
-        } else {
-            console.log("Alas! India win the match");
-            document.write("<br>")
-            document.write("Alas! India win the match")
-            
+        if(age > 0 && age <= 12){
+            alert("You are a Child");
+            document.write("You are a Child");
         }
-        if (pakistanScore < indiaScore) {
-            console.log("Pakistan won the match by 50 runs");
-            document.write("<br>")
-            document.write("Pakistan won the match by 50 runs")
             
-        } else {
-            console.log("Alas! Pakistan lost the match by 50 runs");
-            document.write("<br>")
-            document.write("Alas! Pakistan lost the match by 50 runs")    
+        else if(age > 12 && age <= 19){
+           alert("You are a Teenager");
+            document.write(" You are a Teenager");  
+        }else if(age > 20 && age <= 59){
+            alert("You are a Adult");
+            document.write(age + " = You are a Adult");
+        }else if(age > 60){
+            alert("You are a Senior Citizen");
+            document.write("You are a Senior Citizen");
+        }else{
+            alert("Invalid Input");
+            document.write("Invalid Input");
         }
-        let age = 54;
-        if (age > 50) {
-            console.log("You are eligible for pension");
-            document.write("<br>")
-            document.write("You are eligible for pension")
-            
-        } 
-         else {
-            console.log("You are not eligible for pension");
-            document.write("<br>")
-            document.write("You are not eligible for pension")
-            
+        //Task two even or odd number
+        document.write("<br><br>");
+        var number = prompt("Enter a number: ");
+        if(number % 2 == 0){
+            alert("The number is even");
+            document.write("<br><br>");
+            document.write("The number is even");
+        }else if(number % 2 != 0){
+            alert("The number is odd");
+            document.write("<br><br>");
+            document.write("The number is odd");
+        }else{
+            alert("Invalid Input");
+            document.write("<br><br>");
+            document.write("Invalid Input");
         }
-        let marks = 80;
+        //Task three 3. Positive, Negative, or Zero;
+        var number = prompt("Enter a number: ");
+        if(number > 0){
+            document.write("<br><br>");
+            alert("The number is positive ");
+            document.write("<br><br>");
+            document.write("The number is positive <br>");
+        }else if(number < 0){
+            alert("The number is negative");
+            document.write("<br><br>");
+            document.write("The number is negative");
+        }else if(number == 0){
+            alert("The number is zero");
+            document.write("The number is zero");
+        }else{
+            alert("Invalid Input");
+            document.write("<br><br>");
+            document.write("Invalid Input");
+        }
+
+        //Task  4. Vowel or Consonant Checker
+        document.write("<br><br>");
+        var letter = prompt("Enter a letter: ");
+        if(letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u"){
+            alert("The letter is a vowel");
+            document.write("<br><br>");
+            document.write("<br><br>The letter is a vowel");
+        }else{
+            alert("The letter is a consonant");
+            document.write("<br><br>");
+            document.write("<br><br>The letter is a consonant");
+        }
 
     </script>
 </body>
