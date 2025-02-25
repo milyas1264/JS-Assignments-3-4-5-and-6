@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If, else if</title>
+    <style>
+        h1{background-color: dodgerblue; border: 5px outset red;height: 60px; text-align: center;}
+        button {background-color: black; text-decoration: none; color: white; padding: 3px; margin: 0 auto;}
+        a{color: aqua; font-size: 18px; text-decoration: none;width: auto; height: auto; }
+        
+    </style>
+</head>
+<body>
+    <h1>If, else, and else if statement</h1>
+    <button><a href="../../index.html">Back to home</a></button>
+
+
+    <script>
+        let pakistan = "win"
+        let india = "lose"
+        let pakistanScore = 300
+        let indiaScore = 250
+        if (pakistan == "win") {
+            console.log("Hurrah! Pakistan won the match");
+            document.write("Hurrah! Pakistan won the match")
+            
+        } else {
+            console.log("Alas! Pakistan lost the match");
+            document.write("Alas! Pakistan lost the match")
+            
+        }
+        if (india !== "win") {
+            console.log("Hurrah! India lost the match");
+
+            document.write("<br>")
+            document.write("Hurrah! India lost the match")
+            
+        } else {
+            console.log("Alas! India win the match");
+            document.write("<br>")
+            document.write("Alas! India win the match")
+            
+        }
+        if (pakistanScore < indiaScore) {
+            console.log("Pakistan won the match by 50 runs");
+            document.write("<br>")
+            document.write("Pakistan won the match by 50 runs")
+            
+        } else {
+            console.log("Alas! Pakistan lost the match by 50 runs");
+            document.write("<br>")
+            document.write("Alas! Pakistan lost the match by 50 runs")    
+        }
+        let age = 54;
+        if (age > 50) {
+            console.log("You are eligible for pension");
+            document.write("<br>")
+            document.write("You are eligible for pension")
+            
+        } 
+         else {
+            console.log("You are not eligible for pension");
+            document.write("<br>")
+            document.write("You are not eligible for pension")
+            
+        }
+        let marks = 80;
+
+    </script>
+</body>
+</html>
