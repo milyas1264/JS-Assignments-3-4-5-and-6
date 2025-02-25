@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: cornflowerblue;
+            
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-left: 23%;
+            text-align: center;
+            
+        }
+        th, td {
+            border: 3px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Marks Sheet</h2>
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+        </tr>
+        <tr>
+            <td id="sub1"></td>
+            <td>100</td>
+            <td id="marks1"></td>
+        </tr>
+        <tr>
+            <td id="sub2"></td>
+            <td>100</td>
+            <td id="marks2"></td>
+        </tr>
+        <tr>
+            <td id="sub3"></td>
+            <td>100</td>
+            <td id="marks3"></td>
+        </tr>
+        <tr>
+            <th>Total Marks</th>
+            <th>300</th>
+            <th id="totalMarks"></th>
+        </tr>
+        <tr>
+            <th colspan="2">Percentage</th>
+            <th id="percentage"></th>
+        </tr>
+    </table>
+    <br>
+    <button><a href="../../index.html">Back to home</a></button>
+
+    <script>
+        // Get subject names from the user
+        let subject1 = prompt("Enter the name of the first subject:");
+        let subject2 = prompt("Enter the name of the second subject:");
+        let subject3 = prompt("Enter the name of the third subject:");
+
+        // Total marks for each subject
+        let totalMarksEach = 100;
+
+        // Get obtained marks from the user
+        let marks1 = parseInt(prompt("Enter obtained marks for " + subject1 + ":"));
+        let marks2 = parseInt(prompt("Enter obtained marks for " + subject2 + ":"));
+        let marks3 = parseInt(prompt("Enter obtained marks for " + subject3 + ":"));
+
+        // Calculate total obtained marks and percentage
+        let obtainedMarks = marks1 + marks2 + marks3;
+        let percentage = (obtainedMarks / 300) * 100;
+
+        // Display results in the HTML table
+        document.getElementById("sub1").innerText = subject1;
+        document.getElementById("sub2").innerText = subject2;
+        document.getElementById("sub3").innerText = subject3;
+
+        document.getElementById("marks1").innerText = marks1;
+        document.getElementById("marks2").innerText = marks2;
+        document.getElementById("marks3").innerText = marks3;
+
+        document.getElementById("totalMarks").innerText = obtainedMarks;
+        document.getElementById("percentage").innerText = percentage.toFixed(2) + "%";
+    </script>
+
+</body>
+</html>
