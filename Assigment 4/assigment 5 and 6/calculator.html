@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h1{background-color: dodgerblue; border: 5px outset red;height: 60px; text-align: center;margin-top: 0;}
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <button><a href="../../index.html">Back to home</a></button>
+    <br><br>
+    
+    <script>
+        var num1 = parseInt(prompt("Enter first number: "));
+        var num2 = parseInt(prompt("Enter second number: "));
+        var operator = prompt("Enter operator: ");
+        var result;
+        if (operator === '+') {
+            result = num1 + num2;
+        } else if (operator === '-') {
+            result = num1 - num2;
+        } else if (operator === '*') {
+            result = num1 * num2;
+        } else if (operator === '/') {
+            result = num1 / num2;
+        } else if (operator === '%') {
+            result = num1 % num2;
+        } else {
+            result = "Invalid operator";
+        }
+        document.write("The result is: " + result);
+
+        //6. Leap Year Checker
+        document.write("<br><br>" + "Leap Year Checker");
+        let year = parseInt(prompt("Enter a year: "));
+        if (year % 4 == 0) {
+            document.write("<br><br>" + year + " is a leap year");
+        } else if (year % 4 != 0) {
+            document.write("<br><br>" + year + " is not a leap year");
+        }
+            if (year % 100 == 0) {
+                    document.write("<br><br>" + year + " is not a leap year");
+                } else if (year % 400 != 0) {
+                    document.write("<br><br>" + year + " is not a leap year");
+                }
+
+               // 7. Temperature Checker
+                document.write("<br><br>" + "Temperature Checker");
+                let temp = parseInt(prompt("Enter temperature: "));
+                if (temp >= 30) {
+                    document.write("<br><br>" + "It's Hot ");
+                }
+                if(temp == 20 && temp <= 29){
+                    document.write("<br><br>" + "It's Warm");
+                }
+                if(temp == 10 && temp <= 19){
+                    document.write("<br><br>" + "It's Cool");
+                }
+                if(temp < 10){
+                    document.write("<br><br>" + "It's Cold");
+                }
+                    
+           
+
+
+    </script>
+</body>
+</html>

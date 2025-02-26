@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+</head>
+<body>
+    <h1>Simple Calculator Grade</h1>
+    <button><a href="../../index.html">Back to home</a></button>
+    <br><br>
+    <hr>
+
+    <script>
+        // 8. Grade Calculator
+        let marks = parseInt(prompt("Enter your marks: "));
+        if (marks == 90 && marks <= 100) {
+            document.write("<br><br>" + "Your grade is A");
+        }
+        if (marks == 80 && marks <= 89) {
+            document.write("<br><br>" + "Your grade is B");
+        }
+        if (marks == 70 && marks <= 79) {
+            document.write("<br><br>" + "Your grade is C");
+        }     
+        if (marks == 60 && marks <= 69) {
+            document.write("<br><br>" + "Your grade is D");
+        }
+        if (marks == 50 && marks <= 59) {
+            document.write("<br><br>" + "Your grade is E");
+        }
+        if (marks >= 0 && marks < 49) {
+            document.write("<br><br>" + "Your grade is Failed");
+        }
+        if (marks > 100) {
+            document.write("<br><br>" + "Invalid Input");
+        }
+
+        //9. Largest of Three Numbers
+        document.write("<br><br>");
+        let num1 = parseInt(prompt("Enter first number: "));
+        let num2 = parseInt(prompt("Enter second number: "));
+        let num3 = parseInt(prompt("Enter third number: "));
+        if (num1 > num2 && num1 > num3) {
+            document.write("<br><br>" + num1 + " is the largest number");
+        }
+        if (num2 > num1 && num2 > num3) {
+            document.write("<br><br>" + num2 + " is the largest number");
+        }
+        if (num3 > num1 && num3 > num2) {
+            document.write("<br><br>" + num3 + " is the largest number");
+        }
+        if (num1 == num2 && num1 == num3) {
+            document.write("<br><br>" + "All numbers are equal");
+        } 
+        
+        //10. Login System
+        document.write("<br><br>");
+        let username = prompt("Enter your username: ");
+        let password = prompt("Enter your password: ");
+        if (username == "admin" && password == "1234") {
+            document.write("<br><br>" + "Login successful");
+        } else {
+            document.write("<br><br>" + "Invalid credentials");
+        } 
+        if (username == "" && password == "") {
+            document.write("<br><br>" + "Please enter all details");
+        }
+
+    </script>
+</body>
+</html>
