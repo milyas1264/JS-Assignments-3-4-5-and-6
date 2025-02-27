@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested if</title>
+    <style>
+         h1{background-color: dodgerblue; border: 5px outset red;height: 60px; text-align: center;margin-top: 0;}
+    </style>
+</head>
+<body>
+    <h1>Nested if</h1>
+    <button><a href="../../index.html">Back to home</a></button>
+    <br><br>
+    
+    <script>
+        // User se input lena
+        alert("Press 1 for Calculator,\n 2 for Music,\n 3 for Videos: " + "\n" + "Enter a number (1-3):");
+let choice = parseInt(prompt("Press a number (1-3):"));
+
+// Check karna ke input valid hai ya nahi
+if (!isNaN(choice)) {
+    if (choice === 1) {
+        alert("You pressed 1: Opening Calculator...");
+        document.write("<br>" + "You pressed 1: Opening Calculator...");
+    } else if (choice === 2) {
+        alert("You pressed 2: Playing Music...");
+        document.write("<br>" + "You pressed 2: Playing Music...");
+    } else if (choice === 3) {
+        alert("You pressed 3: Showing Videos...");
+        document.write("<br>" + "You pressed 3: Showing Videos...");
+    } else {
+        alert("Invalid Choice! Please press 1, 2, or 3.");
+    }
+} else {
+    alert("Invalid Input! Please enter a number.");
+}
+
+    </script>
+</body>
+</html>
