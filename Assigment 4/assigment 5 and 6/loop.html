@@ -7,25 +7,19 @@
 </head>
 <body>
     <script>
-        for (let i = 1; i = 11; i++) {
-           
-           let table = document.write(` ${i} x ${i} = ${i * i} <br> `);
+        document.write(`For loop <br> <hr><br>`);
+        for (let i = 1; i <= 10; i++) { 
+            document.write(`${i} x ${i} = ${i * i} <br>`);
         }
-        // for (let love = 1; love < 11; love++) {
-        //     console.log(love);
-        //     document.write(` love = ${love} x ${love} = ${love * love} <br> `);
-        // }
-        for(let i = 0 ; i <= 11 ; i++){
-            
-           let table2 = document.write(`hello-function ${i} x ${i} = ${i * i} <br> `);
-        }
-
-        function showTable(table) {
-            document.write(table);
-        }
-        showTable(table);
-        showTable(table2);
+        document.write(` <br> <hr><br>`);
         
+        //While loop
+        document.write(`While loop <br><br> <hr><br>`);
+        let i = 1;
+        while (i <= 15) {
+            document.write(`${i} x ${i} = ${i * i} <br>`);
+            i++;
+        }
     </script>
 </body>
 </html>
